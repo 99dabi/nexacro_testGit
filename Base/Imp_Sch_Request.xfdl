@@ -21,11 +21,11 @@
                           <Static id="Static00_00_02" taborder="6" text="종료날자" left="26" top="112" width="94" height="35" font="normal 700 14pt/normal &quot;Arial&quot;" onclick="Div00_Div00_Div00_Static00_00_02_onclick"/>
                           <Edit id="Edit00_00_01_00" taborder="7" left="196" top="285" width="25.00%" height="35"/>
                           <Static id="Static00_00_01_00" taborder="8" text="시간" left="376" top="112" width="44" height="35" font="normal 700 14pt/normal &quot;Arial&quot;"/>
-                          <Calendar id="Calendar00" taborder="9" left="120" top="61" width="220" height="36"/>
-                          <Calendar id="Calendar00_00" taborder="10" left="120" top="111" width="220" height="36"/>
+                          <Calendar id="Calendar00" taborder="9" left="161" top="14" width="220" height="36"/>
+                          <Calendar id="Calendar00_00" taborder="10" left="130" top="22" width="220" height="36"/>
                           <CheckBox id="CheckBox00" taborder="11" text="종일" left="630" top="63" width="80" height="35" font="normal 12pt/normal &quot;Arial&quot;"/>
                           <CheckBox id="CheckBox00_00" taborder="12" text="종일" left="630" top="113" width="80" height="35" font="normal 12pt/normal &quot;Arial&quot;"/>
-                          <TextArea id="TextArea00" taborder="13" left="120" top="166" width="487" height="68"/>
+                          <TextArea id="TextArea00" taborder="13" left="110" top="60" width="487" height="68"/>
                           <CheckBox id="CheckBox00_00_00" taborder="14" text="일정알림" left="131" top="233" width="89" height="35" font="normal 12pt/normal &quot;Arial&quot;" onchanged="alert_Sch_Onchange"/>
                           <Combo id="Combo00" taborder="15" text="" left="490" top="5" width="190" height="37" background="white" value="" index="-1" innerdataset="TimeDataSet" codecolumn="time" datacolumn="time"/>
                           <Combo id="Combo00_00" taborder="16" text="" left="470" top="212" width="190" height="37" background="white" value="" index="-1" innerdataset="TimeDataSet" codecolumn="time" datacolumn="time"/>
