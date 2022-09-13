@@ -12,8 +12,8 @@
                     <Div id="Div00" taborder="0" text="Div00" left="10" top="40" width="756" height="270" background="#edf2f9">
                       <Layouts>
                         <Layout>
-                          <Static id="Static00" taborder="0" text="제       목" left="26" top="12" width="120" height="35" font="normal 700 14pt/normal &quot;Arial&quot;"/>
-                          <Edit id="Edit00" taborder="1" left="120" top="12" width="50.00%" height="35"/>
+                          <Static id="Static00" taborder="0" text="제       목" left="350" top="120" width="120" height="35" font="normal 700 14pt/normal &quot;Arial&quot;"/>
+                          <Edit id="Edit00" taborder="1" left="120" top="107" width="48.81%" height="35"/>
                           <Static id="Static00_00" taborder="2" text="시작날자" left="26" top="62" width="94" height="35" font="normal 700 14pt/normal &quot;Arial&quot;"/>
                           <Static id="Static00_00_00" taborder="3" text="메       모" left="26" top="162" width="120" height="35" font="normal 700 14pt/normal &quot;Arial&quot;" onclick="Div00_Div00_Div00_Static00_00_00_onclick"/>
                           <Edit id="Edit00_00_01" taborder="4" left="540" top="170" width="24.34%" height="35"/>
