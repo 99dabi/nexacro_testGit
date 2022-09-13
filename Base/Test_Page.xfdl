@@ -2,7 +2,9 @@
 <FDL version="2.1">
   <Form id="Test_Page" width="1280" height="720" titletext="New Form">
     <Layouts>
-      <Layout height="720" width="1280"/>
+      <Layout height="720" width="1280">
+        <TextArea id="TextArea00" taborder="0" left="210" top="151" width="954" height="381" background="#540858"/>
+      </Layout>
     </Layouts>
   </Form>
 </FDL>
