@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="Form_Work" width="1280" height="720" titletext="Form_Work">
+    <Layouts>
+      <Layout width="1280" height="720" screenid="Desktop_screen">
+        <Div id="backgroundDiv" taborder="0" text="Div00" left="1" top="1" width="1279" height="719" background="#f7f7f7">
+          <Layouts>
+            <Layout>
+              <PopupDiv id="PopupDiv00" text="PopupDiv00" visible="false" left="79" top="439" width="1100" height="215" background="#b63bd8"/>
+              <Div id="Div00" taborder="0" text="Div00" left="84" top="79" width="1095" height="340" background="#edf2f9">
+                <Layouts>
+                  <Layout>
+                    <Static id="schTitle" taborder="0" text="제       목" left="45" top="25" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+                    <Edit id="Edit00" taborder="1" left="145" top="40" width="880" height="30"/>
+                    <Static id="staDt" taborder="2" text="시작날자" left="45" top="70" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+                    <Static id="staDt00" taborder="3" text="종료날자" left="45" top="115" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+                    <Static id="staDt00_00" taborder="4" text="메       모" left="45" top="160" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+                    <Calendar id="StaDateSelect" taborder="5" left="145" top="85" width="330" height="30" type="normal" onchanged="StaDateSelect_onchanged"/>
+                    <Calendar id="endDtSelect" taborder="6" left="145" top="130" width="330" height="30" type="normal"/>
+                    <TextArea id="TextArea00" taborder="7" left="146" top="179" width="879" height="121"/>
+                    <Static id="staDtTime" taborder="8" text="시     간" left="515" top="70" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+                    <CheckBox id="staDtAll" taborder="9" text="종일" left="890" top="88" width="125" height="27" font="normal 12pt/normal &quot;Arial&quot;"/>
+                    <CheckBox id="endDtAll00" taborder="10" text="종일" left="890" top="127" width="125" height="27" font="normal 12pt/normal &quot;Arial&quot;"/>
+                    <CheckBox id="staDtAll00" taborder="11" text="일정알림" left="100" top="313" width="125" height="27" font="normal 12pt/normal &quot;Arial&quot;" onclick="alertOnClick"/>
+                  </Layout>
+                </Layouts>
+              </Div>
+              <Static id="MainTitle" taborder="1" text="■ 중요 일정 등록" left="84" top="29" width="210" height="60" onclick="backgroundDiv_Static00_onclick" font="18px/normal &quot;Malgun Gothic&quot;"/>
+              <Combo id="Combo00" taborder="3" text="Combo00" left="689" top="164" width="260" height="30"/>
+              <Static id="staDtTime" taborder="4" text="시     간" left="599" top="194" width="120" height="60" font="normal 14pt/normal &quot;Arial&quot;"/>
+              <Combo id="Combo00_00" taborder="5" text="Combo00" left="689" top="209" width="260" height="30"/>
+              <Button id="saveBtn" taborder="7" text="저장" left="449" top="659" width="120" height="50" background="#114287" font="normal 12pt/normal &quot;Arial&quot;" color="white"/>
+              <Button id="cansleBtn" taborder="8" text="취소" left="649" top="659" width="120" height="50" background="#114287" font="normal 200 12pt/normal &quot;Arial&quot;" color="white"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Div00_Calendar00_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.backgroundDiv_Static00_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.backgroundDiv_Div00_StaDateSelect_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.StaDateSelect_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.backgroundDiv_addAlertUser_CheckBox00_onclick = function(obj:nexacro.CheckBox,e:nexacro.ClickEventInfo)
+{
+	
+};
+
+this.alertOnClick = function(obj:nexacro.CheckBox,e:nexacro.ClickEventInfo)
+{
+	this.PopupDiv00.trackPopupByComponent(obj, obj.getOffsetWidth(), obj.getOffsetHeight(), 160, 240);
+};
+]]></Script>
+    <Objects>
+      <Dataset id="alertSchTable">
+        <ColumnInfo>
+          <Column id="alertSchId" type="STRING" size="256" description="알람일정id"/>
+          <Column id="alertSchTitle" type="STRING" size="256" description="알람일정 제목"/>
+          <Column id="alertSchStaDt" type="STRING" size="256" description="시작날자"/>
+          <Column id="alertSchStaTime" type="STRING" size="256" description="시작날자시간"/>
+          <Column id="alertSchStaAll" type="STRING" size="256" description="시작일 종일 여부"/>
+          <Column id="alertSchEndDt" type="STRING" size="256" description="종료날자"/>
+          <Column id="alertSchEndTime" type="STRING" size="256" description="종료날자시간"/>
+          <Column id="alertSchEndAll" type="STRING" size="256" description="종료일 종일 여부"/>
+          <Column id="alertSchRemark" type="STRING" size="256" description="메모"/>
+          <Column id="alertSchYn" type="STRING" size="256" description="일정알림여부"/>
+          <Column id="alertSchWriId" type="STRING" size="256" description="작성자id"/>
+          <Column id="alertSchWriDt" type="STRING" size="256" description="작성시간"/>
+        </ColumnInfo>
+      </Dataset>
+      <Dataset id="recAlertUserTable">
+        <ColumnInfo>
+          <Column id="recAlertId" type="STRING" size="256" description="일림대상id"/>
+          <Column id="alertSchId" type="STRING" size="256" description="중요일정등록id"/>
+          <Column id="recAlertUserId" type="STRING" size="256" description="담당자id"/>
+          <Column id="recAlertSt" type="STRING" size="256" description="알람전송상태"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

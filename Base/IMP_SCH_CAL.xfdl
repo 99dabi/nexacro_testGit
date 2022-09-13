@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="IMP_SCH_CAL" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" width="1280">
+        <Div id="grpScheduler" taborder="0" text="Div00" left="0" top="0" width="1280" height="721" background="white">
+          <Layouts>
+            <Layout>
+              <Calendar id="Calendar00" taborder="0" left="215" top="150" width="850" height="540" type="monthonly" onchanged="grpScheduler_Calendar00_onchanged" ondayclick="grpScheduler_Calendar00_ondayclick" innerdataset="dsSchedule" backgroundcolumn="" datecolumn="sdate" textcolorcolumn="" bordercolumn=""/>
+              <Static id="Static00" taborder="1" text="IT그룹중요일정" left="527" top="70" width="233" height="34" font="normal 700 24pt/normal &quot;Arial&quot;" border="0px none,0px none,3px solid #555555"/>
+              <Div id="Div00" taborder="2" left="710" top="332" width="240" height="18" background="RGBA(0,244,244,0.56)"/>
+              <Div id="Div00_00" taborder="3" left="340" top="400" width="240" height="18" background="RGBA(209,231,13,0.56)"/>
+              <Div id="Div00_01" taborder="4" left="460" top="540" width="370" height="20" background="RGBA(10,242,2,0.56)"/>
+              <Static id="Static00_00" taborder="5" text="■ 중요 일정 등록" left="210" top="13" width="264" height="34" font="normal 700 18pt/normal &quot;Arial&quot;"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="Button01_00" taborder="1" text="인쇄" left="975" top="106" width="90" height="34" background="#114287" color="white" border="1px solid #114287,0px solid #114287,1px solid #114287,1px solid #114287" borderRadius="4px"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[
+this.Div00_Calendar00_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.grpScheduler_Calendar00_onchanged = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	
+};
+
+this.grpScheduler_Calendar00_ondayclick = function(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo)
+{
+	//var objDate = this.
+};
+]]></Script>
+    <Objects>
+      <Dataset id="dsSchedule">
+        <ColumnInfo>
+          <Column id="id" type="STRING" size="256"/>
+          <Column id="sdate" type="STRING" size="256"/>
+          <Column id="edate" type="STRING" size="256"/>
+          <Column id="title" type="STRING" size="256"/>
+          <Column id="content" type="STRING" size="256"/>
+          <Column id="type" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="id">01</Col>
+            <Col id="sdate">20211001</Col>
+            <Col id="edate">20211001</Col>
+            <Col id="title">국군의날</Col>
+            <Col id="content">휴일</Col>
+            <Col id="type">99</Col>
+          </Row>
+          <Row>
+            <Col id="id">02</Col>
+            <Col id="sdate">20211003</Col>
+            <Col id="edate">20211003</Col>
+            <Col id="title">개천절</Col>
+            <Col id="content">휴일</Col>
+            <Col id="type">99</Col>
+          </Row>
+          <Row>
+            <Col id="id">03</Col>
+            <Col id="sdate">20211004</Col>
+            <Col id="edate">20211004</Col>
+            <Col id="title">대체휴일</Col>
+            <Col id="content">휴일</Col>
+            <Col id="type">99</Col>
+          </Row>
+          <Row>
+            <Col id="id">04</Col>
+            <Col id="sdate">20211009</Col>
+            <Col id="edate">20211009</Col>
+            <Col id="title">한글날</Col>
+            <Col id="content">휴일</Col>
+            <Col id="type">99</Col>
+          </Row>
+          <Row>
+            <Col id="id">05</Col>
+            <Col id="sdate">20211011</Col>
+            <Col id="edate">20211011</Col>
+            <Col id="title">대체휴일</Col>
+            <Col id="content">휴일</Col>
+            <Col id="type">99</Col>
+          </Row>
+          <Row>
+            <Col id="id">06</Col>
+            <Col id="sdate">20211011</Col>
+            <Col id="edate">20211011</Col>
+            <Col id="title">주간보고</Col>
+            <Col id="content">주간보고</Col>
+            <Col id="type">02</Col>
+          </Row>
+          <Row>
+            <Col id="id">07</Col>
+            <Col id="sdate">20211012</Col>
+            <Col id="edate">20211015</Col>
+            <Col id="title">오전회의</Col>
+            <Col id="content">오전회의</Col>
+            <Col id="type">02</Col>
+          </Row>
+          <Row>
+            <Col id="id">08</Col>
+            <Col id="sdate">20211014</Col>
+            <Col id="edate">20211015</Col>
+            <Col id="title">공지사항</Col>
+            <Col id="content">공지사항</Col>
+            <Col id="type">01</Col>
+          </Row>
+          <Row>
+            <Col id="id">09</Col>
+            <Col id="sdate">20211014</Col>
+            <Col id="edate">20211014</Col>
+            <Col id="title">오후반차</Col>
+            <Col id="content">오후반차</Col>
+            <Col id="type">04</Col>
+          </Row>
+          <Row>
+            <Col id="id">10</Col>
+            <Col id="sdate">20211014</Col>
+            <Col id="edate">20211014</Col>
+            <Col id="title">외부회의</Col>
+            <Col id="content">외부회의</Col>
+            <Col id="type">03</Col>
+          </Row>
+          <Row>
+            <Col id="id">11</Col>
+            <Col id="sdate">20211014</Col>
+            <Col id="edate">20211014</Col>
+            <Col id="title">내부교육</Col>
+            <Col id="content">내부교육</Col>
+            <Col id="type">05</Col>
+          </Row>
+          <Row>
+            <Col id="id">12</Col>
+            <Col id="sdate">20211015</Col>
+            <Col id="edate">20211015</Col>
+            <Col id="title">외부회의</Col>
+            <Col id="content">외부회의</Col>
+            <Col id="type">03</Col>
+          </Row>
+          <Row>
+            <Col id="id">13</Col>
+            <Col id="type">05</Col>
+            <Col id="sdate">20211015</Col>
+            <Col id="edate">20211015</Col>
+            <Col id="title">온라인 교육</Col>
+            <Col id="content">온라인 교육</Col>
+          </Row>
+          <Row>
+            <Col id="id">14</Col>
+            <Col id="sdate">20211018</Col>
+            <Col id="edate">20211021</Col>
+            <Col id="title">공지사항</Col>
+            <Col id="content">공지사항</Col>
+            <Col id="type">01</Col>
+          </Row>
+          <Row>
+            <Col id="id">15</Col>
+            <Col id="sdate">20211018</Col>
+            <Col id="edate">20211022</Col>
+            <Col id="title">Nexacro N 컨퍼런스</Col>
+            <Col id="content">Nexacro N 컨퍼런스</Col>
+            <Col id="type">05</Col>
+          </Row>
+          <Row>
+            <Col id="id">15</Col>
+            <Col id="sdate">20220918</Col>
+            <Col id="edate">20220918</Col>
+            <Col id="title">Nexacro N 컨퍼런스</Col>
+            <Col id="content">Nexacro N 컨퍼런스</Col>
+            <Col id="type">05</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <FileUpTransfer id="FileUpTransfer00"/>
+      <Dataset id="work_sch">
+        <ColumnInfo>
+          <Column id="id" type="STRING" size="256"/>
+          <Column id="datecolumn" type="STRING" size="256"/>
+          <Column id="contents" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="id">1</Col>
+            <Col id="datecolumn">20220908</Col>
+            <Col id="contents">추석연휴전날</Col>
+          </Row>
+          <Row>
+            <Col id="id">2</Col>
+            <Col id="datecolumn">20220909</Col>
+            <Col id="contents">추석전날</Col>
+          </Row>
+          <Row>
+            <Col id="id">3</Col>
+            <Col id="datecolumn">20220910</Col>
+            <Col id="contents">추석당일</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>
